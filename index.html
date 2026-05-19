@@ -277,5 +277,156 @@
         </div>
       </div>
     </section>
+    <section class="w-full bg-[#f9f6f0] py-12 px-4 sm:px-8 md:px-16 lg:px-24">
+      <div class="max-w-7xl w-full mx-auto">
+        <div
+          class="w-full bg-[#e5dec9] rounded-[32px] p-8 md:p-12 shadow-sm relative overflow-hidden"
+        >
+          <h2
+            class="text-3xl md:text-4xl font-black text-[#1c1a17] tracking-tight mb-8 md:mb-10"
+          >
+            Подберите рацион для своих целей
+          </h2>
+
+          <form class="flex flex-wrap items-end gap-4 lg:gap-5 w-full">
+            <div class="flex flex-col gap-2 min-w-[110px] flex-1 sm:flex-none">
+              <label class="text-xs font-semibold text-[#6e6659] pl-2"
+                >Пол</label
+              >
+              <div
+                class="h-12 bg-[#fcfbfa] rounded-full p-1 flex items-center justify-between border border-transparent hover:border-[#a88a5d]/30 transition-colors shadow-inner"
+              >
+                <button
+                  type="button"
+                  class="flex-1 h-full rounded-full bg-[#dccfb4] text-[#1c1a17] text-sm font-bold transition-all duration-200"
+                >
+                  Ж
+                </button>
+                <button
+                  type="button"
+                  class="flex-1 h-full rounded-full bg-transparent text-[#6e6659] text-sm font-medium hover:text-[#1c1a17] transition-all duration-200"
+                >
+                  М
+                </button>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2 min-w-[110px] flex-1">
+              <label class="text-xs font-semibold text-[#6e6659] pl-2 md:hidden"
+                >Ваш вес</label
+              >
+              <input
+                type="text"
+                placeholder="Ваш вес"
+                class="w-full h-12 bg-[#fcfbfa] rounded-full px-5 text-sm font-medium text-[#1c1a17] placeholder-[#8c8275] border border-transparent focus:border-[#a88a5d] focus:bg-white focus:ring-4 focus:ring-[#a88a5d]/10 outline-none transition-all shadow-sm"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2 min-w-[110px] flex-1">
+              <label class="text-xs font-semibold text-[#6e6659] pl-2 md:hidden"
+                >Ваш рост</label
+              >
+              <input
+                type="text"
+                placeholder="Ваш рост"
+                class="w-full h-12 bg-[#fcfbfa] rounded-full px-5 text-sm font-medium text-[#1c1a17] placeholder-[#8c8275] border border-transparent focus:border-[#a88a5d] focus:bg-white focus:ring-4 focus:ring-[#a88a5d]/10 outline-none transition-all shadow-sm"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2 min-w-[110px] flex-1">
+              <label class="text-xs font-semibold text-[#6e6659] pl-2 md:hidden"
+                >Ваш возраст</label
+              >
+              <input
+                type="text"
+                placeholder="Ваш возраст"
+                class="w-full h-12 bg-[#fcfbfa] rounded-full px-5 text-sm font-medium text-[#1c1a17] placeholder-[#8c8275] border border-transparent focus:border-[#a88a5d] focus:bg-white focus:ring-4 focus:ring-[#a88a5d]/10 outline-none transition-all shadow-sm"
+              />
+            </div>
+
+            <div
+              class="flex flex-col gap-2 min-w-[180px] flex-2 relative w-full sm:w-auto"
+            >
+              <label class="text-xs font-semibold text-[#6e6659] pl-2 md:hidden"
+                >Активность</label
+              >
+              <div class="relative w-full">
+                <select
+                  class="w-full h-12 bg-[#fcfbfa] rounded-full pl-5 pr-10 text-sm font-medium text-[#1c1a17] border border-transparent focus:border-[#a88a5d] focus:ring-4 focus:ring-[#a88a5d]/10 outline-none transition-all appearance-none cursor-pointer shadow-sm"
+                >
+                  <option value="" disabled selected hidden>Активность</option>
+                  <option value="low">Низкая (Сидячая работа)</option>
+                  <option value="medium">Средняя (3-5 тренировок)</option>
+                  <option value="high">Высокая (Тяжелый труд)</option>
+                </select>
+                <div
+                  class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#544e45]"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col gap-2 min-w-[180px] flex-2 relative w-full sm:w-auto"
+            >
+              <label class="text-xs font-semibold text-[#6e6659] pl-2 md:hidden"
+                >Выберите цель</label
+              >
+              <div class="relative w-full">
+                <select
+                  class="w-full h-12 bg-[#fcfbfa] rounded-full pl-5 pr-10 text-sm font-medium text-[#1c1a17] border border-transparent focus:border-[#a88a5d] focus:ring-4 focus:ring-[#a88a5d]/10 outline-none transition-all appearance-none cursor-pointer shadow-sm"
+                >
+                  <option value="" disabled selected hidden>
+                    Выберите цель
+                  </option>
+                  <option value="lose">Сбросить вес</option>
+                  <option value="keep">Поддерживать форму</option>
+                  <option value="gain">Набрать массу</option>
+                </select>
+                <div
+                  class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#544e45]"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full lg:w-auto flex-1 lg:flex-none">
+              <button
+                type="submit"
+                class="w-full h-12 px-8 bg-[#4a8a73] text-white font-semibold rounded-full shadow-md hover:bg-[#3b6f5c] hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 text-sm md:text-base whitespace-nowrap"
+              >
+                Рассчитать рацион
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
